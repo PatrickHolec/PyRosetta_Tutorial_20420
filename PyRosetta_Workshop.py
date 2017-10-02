@@ -57,13 +57,17 @@ while True:
         ###########################
         if cmd == 'cmd1':
 
-            print 'Running Python commands:'
-            print "> pose = pose_from_pdb('2AVX_pyrrolysine.pdb')"
-            print '-'*40
+            try:
+                print 'Running Python commands:'
+                print "> pose = pose_from_pdb('2AVX_pyrrolysine.pdb')"
+                print '-'*40
 
-            pose = pose_from_pdb('2AVX_pyrrolysine.pdb')
+                pose = pose_from_pdb('2AVX_pyrrolysine.pdb')
 
-            print '-'*15 + ' FINISHED COMMAND ' + '-'*15
+                print '-'*15 + ' FINISHED COMMAND ' + '-'*15
+            except RuntimeError:
+                print 'We ran into an error (on purpose, though)!'
+                print '-'*15 + ' FINISHED COMMAND ' + '-'*15
 
         ###########################
         elif cmd == 'cmd2':
@@ -472,6 +476,14 @@ while True:
         elif cmd.lower() == 'exit':
             print 'Exiting PyRosetta tutorial...'
             break
+
+        elif cmd == '':
+            continue # no user input
+
+        else:
+            print 'Command unrecognized ({})'.format(cmd)
+            print 'Returning to prompt...'
+            print '-'*15 + ' FINISHED COMMAND ' + '-'*15
 
     except KeyboardInterrupt:
         print 'User interrupted program! Returning to main...'
