@@ -224,25 +224,6 @@ while True:
 
 
         ###########################
-        elif cmd == 'cmd10':
-            
-            print 'Running Python commands:'
-
-            print "> # Let's look at what fast relax output vs. original"
-            print "> pose_fast_relax.pdb_info().name('fast_relax_final')"
-            print "> pymol.apply(pose_fast_relax)"
-            print "> pymol.send_energy(pose_fast_relax)"
-
-            print '-'*40
-
-            # Let's look at what fast relax output vs. original
-            pose_fast_relax.pdb_info().name('fast_relax_final')
-            pymol.apply(pose_fast_relax)
-            pymol.send_energy(pose_fast_relax)
-
-            print '-'*15 + ' FINISHED COMMAND ' + '-'*15
-
-        ###########################
         elif cmd == 'cmd11':
             
             print 'Running Python commands:'
@@ -262,8 +243,6 @@ while True:
 
             print "> # Make the mover with your restrictions "
             print "> pack_mover = PackRotamersMover(scorefxn, task)"
-            print "> # Make an Observer"
-            print "> observer = PyMOL_Observer(pose_pack_mover, True)"
             print "> # Repack"
             print "> pack_mover.apply(pose_pack_mover)"
 
@@ -287,8 +266,6 @@ while True:
 
             # Make the mover with your restrictions 
             pack_mover = PackRotamersMover(scorefxn, task)
-            # Make an Observer
-            observer = PyMOL_Observer(pose_pack_mover, True)
             # Repack
             pack_mover.apply(pose_pack_mover)
 
@@ -328,8 +305,6 @@ while True:
             print "> pose_pack_mover.assign(pose)"
             print "> pose_pack_mover.pdb_info().name('defined_pack_mover')"
 
-            print "> # Make an Observer"
-            print "> observer = PyMOL_Observer(pose_pack_mover, True)"
             print "> # monte carlo object - will allow a TrialMover to "
             print "> # accept or reject moves based on metropolis criteria"
             print "> kT = 1.0"
@@ -371,8 +346,6 @@ while True:
             pose_pack_mover.assign(pose)
             pose_pack_mover.pdb_info().name('defined_pack_mover')
 
-            # Make an Observer
-            observer = PyMOL_Observer(pose_pack_mover, True)
             # monte carlo object - will allow a TrialMover to 
             # accept or reject moves based on metropolis criteria
             kT = 1.0
