@@ -1,0 +1,1 @@
+This is a PyRosetta workshop. Open PyRosetta_workshop.ipynb in Jupyter to check it out. It's mostly based off of the PyRosetta workshops. The only non-standard library dependenc should be PyRosetta.  

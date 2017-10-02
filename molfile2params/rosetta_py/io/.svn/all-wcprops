@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/source/!svn/ver/30434/trunk/mini/src/python/rosetta_py/io
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/source/!svn/ver/25926/trunk/mini/src/python/rosetta_py/io/__init__.py
+END
+mdl_molfile.py
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/source/!svn/ver/30434/trunk/mini/src/python/rosetta_py/io/mdl_molfile.py
+END
+pdb.py
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/source/!svn/ver/30434/trunk/mini/src/python/rosetta_py/io/pdb.py
+END

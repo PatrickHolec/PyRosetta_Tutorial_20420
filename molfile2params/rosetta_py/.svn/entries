@@ -1,0 +1,46 @@
+8
+
+dir
+32032
+https://svn.rosettacommons.org/source/trunk/mini/src/python/rosetta_py
+https://svn.rosettacommons.org/source
+
+
+
+2009-06-11T18:02:51.807390Z
+30434
+dekim
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+6189c7af-7406-0410-a2ce-f22f51069c23
+
+utility
+dir
+
+__init__.py
+file
+
+
+
+
+2008-12-10T17:05:28.000000Z
+d41d8cd98f00b204e9800998ecf8427e
+2008-10-14T18:38:58.376241Z
+25158
+davis
+
+io
+dir
+

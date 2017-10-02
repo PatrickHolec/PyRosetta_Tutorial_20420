@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/source/!svn/ver/30434/trunk/mini/src/python/rosetta_py/utility
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/source/!svn/ver/25926/trunk/mini/src/python/rosetta_py/utility/__init__.py
+END
+r3.py
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/source/!svn/ver/30434/trunk/mini/src/python/rosetta_py/utility/r3.py
+END
+rankorder.py
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/source/!svn/ver/30434/trunk/mini/src/python/rosetta_py/utility/rankorder.py
+END
