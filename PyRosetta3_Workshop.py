@@ -13,7 +13,7 @@ print 'Since we cannot get users to remotely connect to Jupyter, we hope this pr
 print 'First- PyRosetta is going to load the PyRosetta library which may take sometime (~1 minute)'
 print 'Do not freak out if it seems like this script is frozen!'
 
-from pyrosetta import *
+from rosetta import *
 init()
 
 print 'PyRosetta library loaded!'
