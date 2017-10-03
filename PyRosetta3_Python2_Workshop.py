@@ -13,7 +13,7 @@ print 'Since we cannot get users to remotely connect to Jupyter, we hope this pr
 print 'First- PyRosetta is going to load the PyRosetta library which may take sometime (~1 minute)'
 print 'Do not freak out if it seems like this script is frozen!'
 
-from pyrosetta import *
+from rosetta import *
 init()
 
 print 'PyRosetta library loaded!'
@@ -90,18 +90,16 @@ while True:
             print 'Running Python commands:'
             print "> # Load up the parameters"
             print "> params_list = Vector1(['LG.params'])"
-            print "> pose = Pose()"
-            print "> res_set = generate_nonstandard_residue_set(pose,params_list)"
+            print "> res_set = generate_nonstandard_residue_set(params_list)"
             print "> # Import your ligand-receptor pdb file"
-            print "> pose = pose_from_file(pose,'2AVX_pyrrolysine.pdb')"
+            print "> pose = pose_from_pdb('2AVX_pyrrolysine.pdb')"
             print "> scorefxn = get_fa_scorefxn() # The standard full-atom scorefunction"
 
             print '-'*40
 
-            params_list = ['LG.params']
-            pose = Pose()
-            res_set = generate_nonstandard_residue_set(pose,params_list)
-            pose = pose_from_file(pose,'2AVX_pyrrolysine.pdb')
+            params_list = Vector1(['LG.params'])
+            res_set = generate_nonstandard_residue_set(params_list)
+            pose = pose_from_pdb('2AVX_pyrrolysine.pdb')
             scorefxn = get_fa_scorefxn() # The standard full-atom scorefunction
 
             print '-'*15 + ' FINISHED COMMAND ' + '-'*15
